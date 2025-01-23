@@ -2,7 +2,7 @@
 分為閉區間、開區間、半開半閉區間，首先要確保Array內元素是有序的
 
 <font color = 'red'>1.閉區間 []</font>
-![alt text](image-1.png =300*400)
+![alt text](image-1.png=300*400)
 1.閉區間
 ```C++
 int lower_bound(vector<int>& nums,int target){
