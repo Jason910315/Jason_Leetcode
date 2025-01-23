@@ -1,10 +1,8 @@
 # Binary Search的概念與寫法
 分為閉區間、開區間、半開半閉區間，首先要確保Array內元素是有序的
 
-<font color = 'red'>1.閉區間 []</font>
-<img src="Images/image-1.png" width = "500px" height="1000px">
-
-1.閉區間
+## 1.閉區間
+<img src="Images/image-1.png">
 ```C++
 int lower_bound(vector<int>& nums,int target){
     int left = 0;
@@ -20,8 +18,8 @@ int lower_bound(vector<int>& nums,int target){
 }
 ```
 
-2.左閉右開區間 [left,right)
-![alt text](image.png)
+## 2.左閉右開區間 [left,right)
+<img src="Images/image.png">
 ```C++
 int lower_bound2(vector<int>& nums,int target){
     int left = 0;
@@ -37,7 +35,7 @@ int lower_bound2(vector<int>& nums,int target){
 }
 ```
 
-3.開區間 (left,right)
+## 3.開區間 (left,right)
 ```C++
 int lower_bound3(vector<int>& nums,int target){
     int left = -1;
@@ -59,6 +57,5 @@ int lower_bound3(vector<int>& nums,int target){
 * 開區間:當下一次循環為left + 1 == right，則返回right  
 
 而上述例題是想要找>=target的數裡的起始位置，若今天尋找目標不同，如>、<=、<，也可以用lower_bound閉區間的寫法來完成，以不同target模式來替換，如下圖
-![alt text](image-2.png)
-
+<img src="Images/image-2.png">
 
